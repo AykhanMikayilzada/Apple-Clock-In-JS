@@ -37,7 +37,7 @@ body .container {
 body .buttons {
   display: flex;
   justify-content: space-around;
-  max-width: 480px;
+  max-width: 400px;
   width: 100%;
   margin-top: 25px;
 }
