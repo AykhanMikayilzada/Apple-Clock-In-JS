@@ -27,9 +27,9 @@ start.addEventListener("click", () => {
 
   clearInterval(intervalIndex);
   intervalIndex = setInterval(() => {
-    milliseconds += 10;
+    milliseconds += 1;
 
-    if (milliseconds === 1000) {
+    if (milliseconds === 100) {
       seconds++;
       milliseconds = 0;
     }
@@ -75,7 +75,7 @@ function convertTime(seconds, milliseconds) {
   const roundMin = min < 10 ? "0" + min : min;
   const roundLastSec = lastSec < 10 ? "0" + lastSec : lastSec;
 
-  const roundMilliseconds = milliseconds.toString().padStart(3, "0");
+  const roundMilliseconds = milliseconds.toString().padStart(2, "0");
 
   let formattedTime = `${roundHours}:${roundMin}:${roundLastSec},${roundMilliseconds}`;
 
